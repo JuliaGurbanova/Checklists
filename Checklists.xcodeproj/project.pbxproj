@@ -14,6 +14,7 @@
 		C12860332B0D356B00ECB836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12860312B0D356B00ECB836 /* Main.storyboard */; };
 		C12860352B0D356C00ECB836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12860342B0D356C00ECB836 /* Assets.xcassets */; };
 		C12860382B0D356C00ECB836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12860362B0D356C00ECB836 /* LaunchScreen.storyboard */; };
+		C14118D62B47073B005E2CFE /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14118D52B47073B005E2CFE /* DataModel.swift */; };
 		C16802D12B32191400F69A9A /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16802D02B32191400F69A9A /* ItemDetailViewController.swift */; };
 		C18F3AA42B3B4AA800B903DF /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F3AA32B3B4AA800B903DF /* ListDetailViewController.swift */; };
 		C193B12F2B399408000DEFD9 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C193B12E2B399408000DEFD9 /* AllListsViewController.swift */; };
@@ -30,6 +31,7 @@
 		C12860342B0D356C00ECB836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C12860372B0D356C00ECB836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C12860392B0D356C00ECB836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C14118D52B47073B005E2CFE /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		C16802D02B32191400F69A9A /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		C18F3AA32B3B4AA800B903DF /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		C193B12E2B399408000DEFD9 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
@@ -67,19 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				C128602B2B0D356B00ECB836 /* AppDelegate.swift */,
-				C193B1322B399A18000DEFD9 /* Checklist.swift */,
-				C193B12E2B399408000DEFD9 /* AllListsViewController.swift */,
-				C18F3AA32B3B4AA800B903DF /* ListDetailViewController.swift */,
 				C128602D2B0D356B00ECB836 /* SceneDelegate.swift */,
-				C128602F2B0D356B00ECB836 /* CheckllistViewController.swift */,
-				C16802D02B32191400F69A9A /* ItemDetailViewController.swift */,
-				C1212CE92B2F76D0006A8EC8 /* ChecklistItem.swift */,
-				C12860312B0D356B00ECB836 /* Main.storyboard */,
-				C12860342B0D356C00ECB836 /* Assets.xcassets */,
-				C12860362B0D356C00ECB836 /* LaunchScreen.storyboard */,
+				C14118D72B47308C005E2CFE /* Data Models */,
+				C14118D82B4730BD005E2CFE /* View Controllers */,
+				C14118D92B4730DD005E2CFE /* Resourses */,
 				C12860392B0D356C00ECB836 /* Info.plist */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		C14118D72B47308C005E2CFE /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				C193B1322B399A18000DEFD9 /* Checklist.swift */,
+				C1212CE92B2F76D0006A8EC8 /* ChecklistItem.swift */,
+				C14118D52B47073B005E2CFE /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		C14118D82B4730BD005E2CFE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C193B12E2B399408000DEFD9 /* AllListsViewController.swift */,
+				C18F3AA32B3B4AA800B903DF /* ListDetailViewController.swift */,
+				C128602F2B0D356B00ECB836 /* CheckllistViewController.swift */,
+				C16802D02B32191400F69A9A /* ItemDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C14118D92B4730DD005E2CFE /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				C12860312B0D356B00ECB836 /* Main.storyboard */,
+				C12860342B0D356C00ECB836 /* Assets.xcassets */,
+				C12860362B0D356C00ECB836 /* LaunchScreen.storyboard */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +188,7 @@
 				C1212CEA2B2F76D0006A8EC8 /* ChecklistItem.swift in Sources */,
 				C193B1332B399A18000DEFD9 /* Checklist.swift in Sources */,
 				C18F3AA42B3B4AA800B903DF /* ListDetailViewController.swift in Sources */,
+				C14118D62B47073B005E2CFE /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
